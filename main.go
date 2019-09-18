@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	botStatus string = "Testing!"
+	botStatus string = "Bathtime :)"
 	commandPrefix = "!vesi"
 	memeCommands = true
 	botTokenFileName = "token.txt"
@@ -83,6 +83,12 @@ func commandHandler(vesi *discordgo.Session, message *discordgo.MessageCreate) {
 			switch commandString {
 			case "help":
 				helpText := HelpCommand()
+				sendMessage(vesi, channelID, helpText)
+
+				break
+
+			case "sorc":
+				helpText := commandSource()
 				sendMessage(vesi, channelID, helpText)
 
 				break

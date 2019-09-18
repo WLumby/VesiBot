@@ -40,6 +40,7 @@ VesiBot has a continually updating list of official commands:
 | Command   | Description |
 | --------- | ----------- |
 |!vesi help | Displays list of commands
+|!vesi sorc | Displays source code for bot
 |!vesi find npc name | Find the zone an NPC is located in
 |!vesi item item name | Find where an item is from
 |!vesi zone zone name | Find details about a zone
